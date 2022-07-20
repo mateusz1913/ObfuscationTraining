@@ -5,6 +5,8 @@
  * @format
  */
 
+const obfuscatorPlugin = require('./obfuscator-io-metro-plugin');
+
 module.exports = {
   transformer: {
     getTransformOptions: async () => ({
@@ -14,4 +16,5 @@ module.exports = {
       },
     }),
   },
+  ...obfuscatorPlugin,
 };

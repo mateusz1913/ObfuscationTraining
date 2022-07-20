@@ -61,3 +61,6 @@ buck-out/
 # Ruby / CocoaPods
 /ios/Pods/
 /vendor/bundle/
+
+**/app-release
+!**/app-release.apk
